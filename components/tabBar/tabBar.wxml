@@ -1,0 +1,8 @@
+<!--components/tabBar.wxml-->
+<view>
+  <view class='footer_wrap'>
+    <view wx:for="{{footerList}}" wx:key="{{index}}" bindtap='_trunPage'  data-index="{{index}}" data-item="{{item}}">
+      <text style="color:{{index == myPage ? '#FF9500':'#898989' }}" >{{item.name}}</text>
+    </view>
+  </view>
+</view>

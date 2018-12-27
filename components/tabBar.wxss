@@ -1,0 +1,27 @@
+/* components/tabBar.wxss */
+.footer_wrap{
+  width:100%;
+  height:100rpx;
+  display:flex;
+  align-items: center;
+  justify-content: space-between;
+  background:#fff;
+  position: fixed;
+  bottom:0;
+  z-index: 9999;
+}
+.footer_wrap > view{
+  flex:1;
+  font-size:20rpx;
+  text-align: center;
+}
+.footer_wrap image{
+  width:40rpx;
+  height:40rpx;
+  display:block;
+  margin:0 auto;
+}
+.footer_wrap text{
+  display:inline-block;
+  margin-top:10rpx;
+}

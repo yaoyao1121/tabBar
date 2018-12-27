@@ -1,0 +1,18 @@
+<!--index.wxml-->  
+<view>
+  <!-- <button bindtap='showTab'>显示tab</button>
+  <button bindtap='hideTab'>隐藏tab</button> -->
+  <button bindtap='moreTab'> 显示多条/一条 </button>
+  <view wx:for="{{list}}" wx:key='index' hidden='{{flag}}'>
+    <view>{{item.id}}</view>
+    <view>{{item.name}}</view>
+    <view>{{item.age}}</view>
+  </view>
+  <view hidden="{{!flag}}">
+    <view>{{list[0].id}}</view>
+    <view>{{list[0].name}}</view>
+    <view>{{list[0].age}}</view>
+  </view>
+</view>
+
+<tabBar my-page='0'></tabBar>
